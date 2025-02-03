@@ -1,4 +1,4 @@
-import ConcertList from "../components/ConcertList";
+import ConcertList from "../components/Header/ConcertList";
 
 function Home() {
   return (

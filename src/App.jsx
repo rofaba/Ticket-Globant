@@ -4,14 +4,14 @@ import Home from "./pages/Home";
 import Checkout from "./pages/Checkout";
 import ConfirmPage from "./pages/ConfirmPage";
 import NotFound from "./pages/NotFound"; // 🚀 Importamos la nueva página 404
-import Navbar from "./components/Navbar";
+import Header from './components/Header/Header';
 import "./App.css";
 
 function App() {
   return (
     <CartProvider>
       <Router>
-        <Navbar />
+        <Header />
         <div className="container">
           <Routes>
             <Route path="/" element={<Home />} />

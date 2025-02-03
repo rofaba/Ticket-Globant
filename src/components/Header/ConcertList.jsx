@@ -1,7 +1,6 @@
 import { useState } from "react";
-import ConcertCard from "./ConcertCard";
-import concerts from "../data/concerts";
-import FilterBar from "./FilterBar";
+import ConcertCard from "../ConcertCard";
+import concerts from "../../data/concerts";
 
 function ConcertList() {
   const [filteredConcerts, setFilteredConcerts] = useState(concerts);
@@ -36,7 +35,6 @@ function ConcertList() {
 
   return (
     <>
-      <FilterBar onFilterChange={handleFilterChange} />
       <div className="concert-list">
         {filteredConcerts.length > 0 ? (
           filteredConcerts.map((concert) => (
