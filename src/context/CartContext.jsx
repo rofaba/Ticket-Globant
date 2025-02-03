@@ -1,4 +1,6 @@
-/* eslint-disable react/prop-types */import { createContext, useState, useEffect } from "react";
+/* eslint-disable react/prop-types */
+
+import { createContext, useState, useEffect } from "react";
 
 export const CartContext = createContext();
 
@@ -17,9 +19,11 @@ export function CartProvider({ children }) {
       const existingItem = prevCart.find((item) => item.id === concert.id);
       
       if (existingItem) {
-        // Validar que no se excedan las 6 entradas por concierto
+
+        // Validar que no supere las 6 entradas por concierto
+
         if (existingItem.quantity >= 6) {
-          alert("No puedes agregar más de 6 entradas para este concierto.");
+       
           return prevCart;
         }
         return prevCart.map((item) =>
@@ -56,6 +60,7 @@ export function CartProvider({ children }) {
     );
   };
   
+// vaciar carrito
 
   return (
     <CartContext.Provider value={{ cart, addToCart, removeFromCart, updateQuantity, setCart }}>

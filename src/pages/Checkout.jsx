@@ -20,8 +20,10 @@ function Checkout() {
   const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
 
   const handleConfirmPurchase = () => {
-    setMessage("Compra confirmada ✅ Redirigiendo...");
+    setMessage("Confirmando su compra... ");
     
+    //Agregar spinner
+
     setTimeout(() => {
       navigate("/confirm");
     }, 2000);

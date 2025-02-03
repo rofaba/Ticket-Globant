@@ -5,7 +5,7 @@ function Home() {
   return (
     <div>
       <MainEvent />
-      <h1>Conciertos Disponibles</h1>
+      <h2>Conciertos Disponibles</h2>
       <ConcertList />
     </div>
   );

@@ -1,6 +1,4 @@
-/* ------------------------ */
-/* 📌 Ajustes Generales */
-/* ------------------------ */
+
 body {
   font-family: Arial, sans-serif;
   background-color: white;
@@ -9,9 +7,7 @@ body {
   padding: 0;
 }
 
-/* ------------------------ */
-/* 📌 Contenedor Principal */
-/* ------------------------ */
+
 .container {
   width: 80%;
   max-width: 1200px;
@@ -25,9 +21,7 @@ body {
   justify-content: center;
 }
 
-/* ------------------------ */
-/* 📌 Tarjetas de Conciertos */
-/* ------------------------ */
+
 .card {
   border: 2px solid black;
   padding: 15px;
@@ -38,9 +32,7 @@ body {
   align-items: center;
 }
 
-/* ------------------------ */
-/* 📌 Botones */
-/* ------------------------ */
+
 button {
   border: 2px solid black;
   background: none;
@@ -53,9 +45,7 @@ button:hover {
   background: lightgray;
 }
 
-/* ------------------------ */
-/* 📌 Inputs */
-/* ------------------------ */
+
 input {
   border: 2px solid black;
   padding: 5px;
@@ -63,9 +53,7 @@ input {
   text-align: center;
 }
 
-/* ------------------------ */
-/* 📌 Mensajes de Éxito/Error */
-/* ------------------------ */
+
 .success-message {
   color: green;
   font-size: 14px;
@@ -78,9 +66,7 @@ input {
   margin-top: 5px;
 }
 
-/* ------------------------ */
-/* 📌 Página 404 */
-/* ------------------------ */
+
 .not-found {
   text-align: center;
   padding: 50px;
@@ -107,39 +93,35 @@ input {
   background: lightgray;
 }
 
-/* ------------------------ */
-/* 📌 Diseño Responsivo 📱 */
-/* ------------------------ */
+
 @media (max-width: 768px) {
   .container {
     width: 95%;
     padding: 10px;
   }
 
-  /* Navegación adaptativa */
+
   .nav {
     display: flex;
     flex-direction: column;
     text-align: center;
   }
 
-  /* Tarjetas de conciertos en columna */
+ 
   .card {
     padding: 10px;
     width: 100%;
   }
 
-  /* Botones ocupan más espacio en móviles */
+
   button {
     width: 100%;
   }
 
-  /* Ajustar fuente de los mensajes */
   .success-message, .error-message {
     font-size: 12px;
   }
 
-  /* Página 404 ajustada para pantallas pequeñas */
   .not-found {
     padding: 30px;
   }
@@ -158,7 +140,7 @@ input {
 }
 
 @media (max-width: 480px) {
-  /* Ajustes extra para pantallas más pequeñas */
+  
   .container {
     width: 100%;
     padding: 5px;

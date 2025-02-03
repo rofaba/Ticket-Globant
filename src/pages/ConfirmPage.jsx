@@ -3,15 +3,15 @@ import { CartContext } from "../context/CartContext";
 import { useNavigate } from "react-router-dom";
 
 function ConfirmPage() {
-  const { cart, setCart } = useContext(CartContext); // ✅ Asegurar que obtenemos setCart
+  const { cart, setCart } = useContext(CartContext); 
   const navigate = useNavigate();
 
   useEffect(() => {
     if (cart.length > 0) {
-      setCart([]); // ✅ Vacía el carrito después de confirmar la compra
-      localStorage.removeItem("cart"); // ✅ Limpia el carrito en LocalStorage
+      setCart([]); 
+      localStorage.removeItem("cart");
     }
-  }, [cart, setCart]); // ✅ Agregar dependencias correctas
+  }, [cart, setCart]); 
 
   return (
     <div>

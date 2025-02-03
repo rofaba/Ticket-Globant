@@ -3,7 +3,7 @@ import { CartProvider } from "./context/CartContext";
 import Home from "./pages/Home";
 import Checkout from "./pages/Checkout";
 import ConfirmPage from "./pages/ConfirmPage";
-import NotFound from "./pages/NotFound"; // 🚀 Importamos la nueva página 404
+import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
 import "./App.css";
 
@@ -17,7 +17,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/confirm" element={<ConfirmPage />} />
-            <Route path="*" element={<NotFound />} /> {/* 🚀 Ruta 404 */}
+            <Route path="*" element={<NotFound />} /> 
           </Routes>
         </div>
       </Router>

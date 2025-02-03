@@ -9,6 +9,9 @@ function ConcertList() {
   const handleFilterChange = ({ location, date, minPrice, maxPrice }) => {
     let filtered = concerts;
 
+
+    //filtramos por cada uno de los parametros que se haya solicitado secuencialmente
+
     if (location) {
       filtered = filtered.filter((concert) =>
         concert.location.toLowerCase().includes(location.toLowerCase())
@@ -31,7 +34,7 @@ function ConcertList() {
       );
     }
 
-    setFilteredConcerts(filtered);
+    setFilteredConcerts(filtered);  
   };
 
   return (
