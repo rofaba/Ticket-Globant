@@ -8,3 +8,7 @@
 .event_container img {
     padding:30px;
 }
+.concert_date{
+    display:flex;
+    gap:30px;
+}
