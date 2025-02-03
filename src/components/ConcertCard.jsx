@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useContext, useState } from "react";
-/*import { CartContext } from "../context/CartContext";*/
+import { CartContext } from "../context/CartContext";
 import CardButton from "./CardButton";
 import "../App.css";
 
@@ -40,3 +40,4 @@ function ConcertCard({ concert }) {
 }
 
 export default ConcertCard;
+
