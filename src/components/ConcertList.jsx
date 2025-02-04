@@ -9,6 +9,7 @@ function ConcertList() {
 
   return (
     <>
+    
       <div className="concert-list">
         {filteredConcerts.length > 0 ? (
           filteredConcerts.map((concert) => (
