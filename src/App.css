@@ -1,7 +1,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: white;
+  background-color: whitesmoke;
   color: black;
   margin: 0;
   padding: 0;
@@ -9,10 +9,10 @@ body {
 
 
 .container {
-  width: 80%;
+  width: 100%;
   max-width: 1200px;
   margin: auto;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .concert-list{
@@ -20,11 +20,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
-
-
-
-
-
 
 button {
 

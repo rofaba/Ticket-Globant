@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ConcertCard from "./ConcertCard";
 import concerts from "../data/concerts";
-
+import "./ConcertList.css"
 
 function ConcertList() {
   

@@ -7,12 +7,12 @@ function MainEvent() {
     return(
     <div className="event_container">
         <img src={concerts[randomindex].src} />
-        <h3>{concerts[randomindex].name}</h3>
-        <p>{concerts[randomindex].description}</p>
-        <div className="concert_date">
-            <p>{concerts[randomindex].location}</p> 
-            <p>{concerts[randomindex].date}</p>
-        </div>
+            <div className="concert-data">
+                <h3>{concerts[randomindex].name}</h3>
+                <p>{concerts[randomindex].description}</p>
+                <p>{concerts[randomindex].location}</p> 
+                <p>{concerts[randomindex].date}</p>
+            </div>
     </div>
     )
     

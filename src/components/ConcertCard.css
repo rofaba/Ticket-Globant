@@ -1,14 +1,14 @@
 .card {
-    max-width: 250px;
+    max-width: 300px;
     height: auto;
-    margin: 10px;
+    margin: 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 3px;
-    background: rgb(7,110,228);
-    background: linear-gradient(180deg, rgba(7,110,228,0.9904912836767037) 57%, rgba(240,248,255,1) 100%);
+    
+    background: linear-gradient(180deg, rgb(228, 103, 7) 57%, rgba(240,248,255,1) 100%);
     
     color:aliceblue;
     overflow: hidden;
@@ -44,6 +44,9 @@
   }
  .card-button{
   background-color: rgb(7,110,228);
+  padding: 8px 15px;
+  cursor: pointer;
   color:aliceblue;
   font-weight: bold;
+  border:none;
  }

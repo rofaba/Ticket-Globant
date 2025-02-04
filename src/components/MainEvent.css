@@ -7,11 +7,12 @@
 
 }
 .event_container img {
-    width: 80%;
-    height: auto;
+    width: 100%;
+    height: 400px;
     padding: 20px;
+
 }
-.concert_date{
-    display:flex;
-    gap:30px;
+.concert-data{
+        display:flex;
+        gap:100px;
 }

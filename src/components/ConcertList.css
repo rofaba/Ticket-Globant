@@ -1,0 +1,6 @@
+.concert-list{
+    background-color: rgb(229, 227, 227);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

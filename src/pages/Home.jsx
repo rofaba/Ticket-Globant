@@ -3,7 +3,7 @@ import MainEvent from "../components/MainEvent"
 import {Link} from 'react-router-dom'
 function Home() {
   return (
-    <div>
+    <div style={{ textAlign: "center" }}> 
       <MainEvent />
       <Link classname="carrito" to="/checkout">CARRITO</Link>
       
