@@ -46,7 +46,7 @@ function ConcertList() {
             <ConcertCard key={concert.id} concert={concert} />
           ))
         ) : (
-          <p>No se encontraron conciertos con los filtros aplicados.</p>
+          <p>No se encontraron conciertos</p>
         )}
       </div>
     </>

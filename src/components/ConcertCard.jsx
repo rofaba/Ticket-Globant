@@ -3,6 +3,7 @@ import { useContext, useState } from "react";
 import { CartContext } from "../context/CartContext";
 import CardButton from "./CardButton";
 import "../App.css";
+import "./ConcertCard.css"
 
 function ConcertCard({ concert }) {
   const { addToCart, cart } = useContext(CartContext);
@@ -31,11 +32,19 @@ function ConcertCard({ concert }) {
       <img src={concert.src} alt="imagen_concierto" />
       <h3>{concert.name}</h3>
       <p>{concert.description}</p>
-      <p><strong>Fecha:</strong> {concert.date}</p>
-      <p><strong>Lugar:</strong> {concert.location}</p>
-      <p><strong>Precio:</strong> ${concert.price}</p>
 
+      <div className="card-bottom">
+        <div className="card-data">
+            <div className="location">
+            <p><strong>{concert.location}</strong> </p>
+            <p className="concert-date">{concert.date}</p>
+            </div>  
+            <p>${concert.price}</p>
+        </div>
       <CardButton onClick={handleAddToCart} />
+      </div>
+      
+      
       
       {message && (
         <p className={message.includes("OK") ? "success-message" : "error-message"}>
