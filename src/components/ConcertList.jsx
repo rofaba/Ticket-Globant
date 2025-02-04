@@ -4,7 +4,7 @@ import concerts from "../data/concerts";
 
 
 function ConcertList() {
-  // Set filteredConcerts to the full list of concerts
+  
   const [filteredConcerts] = useState(concerts);
 
   return (
