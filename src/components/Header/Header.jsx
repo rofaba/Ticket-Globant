@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 import Navbar from "./NavBar";
 import './Header.css';
 
 function Header() {
     return (
         <div className='cabecera'>
-            <h2>Ticket-G</h2>
+            <Link to="/" className="links">Ticket-G</Link>
             <Navbar />
         </div>
     )
