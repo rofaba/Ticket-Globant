@@ -9,10 +9,15 @@
 .event_container img {
     width: 100%;
     height: 400px;
-    padding: 20px;
+    padding: 20 20 0 20px;
 
 }
 .concert-data{
-        display:flex;
-        gap:100px;
+    width:100%;
+    background-color:rgb(228, 103, 7);
+    color: white;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
 }
+
