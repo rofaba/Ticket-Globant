@@ -9,19 +9,7 @@ import "./App.css";
 
 function App() {
   return (
-    <CartProvider>
-      <Router>
-        <Header />
-        <div className="container">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/checkout" element={<Checkout />} />
-            <Route path="/confirm" element={<ConfirmPage />} />
-            <Route path="*" element={<NotFound />} /> {/* 🚀 Ruta 404 */}
-          </Routes>
-        </div>
-      </Router>
-    </CartProvider>
+    <Header />
   );
 }
 
