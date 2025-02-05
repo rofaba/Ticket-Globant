@@ -12,10 +12,10 @@ function MainEvent() {
         setConcert(concerts[index])
         }
 
-        const intervalId = setInterval(getRandomConcert, 10000);
-        return () => clearInterval(intervalId);
+        const intervalIndex = setInterval(getRandomConcert, 10000);
+        return () => clearInterval(intervalIndex);
 
-    }, [concert]);
+    }, []);
 
 // por ahora todos los conciertos tienen la misma src al mismo tiempo, pareciera no funciona pero funciona :D)
 
