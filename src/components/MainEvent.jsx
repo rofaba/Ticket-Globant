@@ -17,7 +17,6 @@ function MainEvent() {
 
     }, []);
 
-// por ahora todos los conciertos tienen la misma src al mismo tiempo, pareciera no funciona pero funciona :D)
 
     return(
     <div className="event_container">
