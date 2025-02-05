@@ -30,7 +30,7 @@ function Checkout() {
   };
 
   return (
-    <div>
+    <div className="checkout_container">
       <h1>Carrito de Compras</h1>
       {cart.map((item) => (
         <div key={item.id} className="card">
@@ -38,11 +38,10 @@ function Checkout() {
           <p>Precio: ${item.price}</p>
           <p>
             Cantidad: 
-            <input 
+            <input className="numEntradas"
               type="number" 
               value={item.quantity} 
-              min="1" 
-              max="6" 
+             
               onChange={(e) => updateQuantity(item.id, parseInt(e.target.value))} 
             />
           </p>

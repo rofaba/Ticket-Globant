@@ -42,6 +42,9 @@ export function CartProvider({ children }) {
     setCart((prevCart) => prevCart.filter((item) => item.id !== id));
   };
 
+  
+  // utilizar esta función o limitar el numero directamente en el input??
+
   const updateQuantity = (id, quantity) => {
     if (quantity < 1) {
       alert("La cantidad no puede ser menor a 1.");
