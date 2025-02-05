@@ -5,6 +5,7 @@ import CardButton from "./CardButton";
 import "../App.css";
 import "./ConcertCard.css"
 
+
 function ConcertCard({ concert }) {
   const { addToCart, cart } = useContext(CartContext);
   const [message, setMessage] = useState("");
@@ -43,7 +44,6 @@ function ConcertCard({ concert }) {
         </div>
       <CardButton onClick={handleAddToCart} />
       </div>
-      
       
       
       {message && (
